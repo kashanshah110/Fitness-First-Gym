@@ -21,6 +21,15 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
+    const desktop = window.matchMedia('(min-width: 1021px)');
+    const closeMenuOnDesktop = () => {
+      if (desktop.matches) setOpen(false);
+    };
+    desktop.addEventListener('change', closeMenuOnDesktop);
+    return () => desktop.removeEventListener('change', closeMenuOnDesktop);
+  }, []);
+
+  useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
     const onKey = (e) => e.key === 'Escape' && setOpen(false);
     window.addEventListener('keydown', onKey);

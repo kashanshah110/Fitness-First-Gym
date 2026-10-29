@@ -40,8 +40,8 @@ h2 em,.acc{color:var(--acc);font-style:normal}
 .mobile a:hover,.mobile a.on{color:var(--acc)}
 .mobile a.on{border-color:rgba(180,255,31,.45)}
 .logo,.burger{position:relative;z-index:50}
-.burger{width:44px;height:44px;display:grid;place-items:center}
-@media(max-width:1020px){.links,.nav .btn{display:none}.burger{display:block}}
+.burger{width:44px;height:44px;place-items:center}
+@media(max-width:1020px){.links,.nav .btn{display:none}.burger{display:grid}}
 
 /* Hero */
 .hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;isolation:isolate}
