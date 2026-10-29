@@ -109,8 +109,9 @@ h2 em,.acc{color:var(--acc);font-style:normal}
 
 /* Location, contact, footer */
 .loc{display:grid;grid-template-columns:1fr 1.2fr;gap:4rem;align-items:center}
-.map{aspect-ratio:4/3;background:#111}.map iframe{width:100%;height:100%;border:0;filter:grayscale(.85) invert(.92) contrast(.9)}
+.map{aspect-ratio:4/3;min-height:280px;background:#111}.map iframe{width:100%;height:100%;min-height:280px;border:0;filter:grayscale(.85) invert(.92) contrast(.9)}
 @media(max-width:860px){.loc{grid-template-columns:1fr;gap:2.5rem}}
+@media(max-width:860px){.map{aspect-ratio:auto;height:clamp(320px,85vw,460px);min-height:320px}.map iframe{height:100%;min-height:100%;filter:none}.loc .cta-row .btn{flex:1 1 100%;justify-content:center}}
 .contact{text-align:center;background:radial-gradient(circle at 50% 100%,rgba(180,255,31,.18),transparent 60%),var(--panel)}
 .contact .lead{margin-inline:auto}.contact .cta-row{justify-content:center}
 .bignum{display:block;font:clamp(2.6rem,11vw,7rem)/1.1 var(--disp);color:var(--acc);margin-bottom:2rem;letter-spacing:.02em;transition:color .3s}.bignum:hover{color:#fff}
