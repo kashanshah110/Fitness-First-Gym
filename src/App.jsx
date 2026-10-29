@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Facilities from './components/Facilities';
 import Gallery from './components/Gallery';
+import Reviews from './components/Reviews';
 import OpeningHours from './components/OpeningHours';
 import Location from './components/Location';
 import Contact from './components/Contact';
@@ -17,7 +18,7 @@ export default function App() {
     <MotionConfig reducedMotion="user">
       <Navbar />
       <main>
-        <Hero /><About /><Facilities /><Gallery /><OpeningHours /><Location /><Contact />
+        <Hero /><About /><Facilities /><Gallery /><Reviews /><OpeningHours /><Location /><Contact />
       </main>
       <Footer />
       <a className="wa-float" href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><MessageCircle size={26} /></a>

@@ -95,6 +95,30 @@ h2 em,.acc{color:var(--acc);font-style:normal}
 .lb-close:hover,.lb-nav:hover{background:var(--acc);color:#000}.lb-close{position:absolute;top:1rem;right:1rem;z-index:2}
 @media(max-width:600px){.lb-nav{position:absolute;bottom:1rem}.lb-nav.prev{left:1rem}.lb-nav.next{right:1rem}}
 
+/* Reviews */
+.reviews-summary{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:2rem;padding:1.75rem 2rem;margin:2.5rem 0;background:#fff;color:#222;border-radius:4px}
+.rating-bars{display:grid;gap:.45rem}
+.rating-row{display:grid;grid-template-columns:1rem minmax(0,1fr);align-items:center;gap:.8rem;color:#666;line-height:1}
+.rating-track{height:12px;background:#eee;border-radius:999px;overflow:hidden}
+.rating-track i{display:block;height:100%;background:#fbbc04;border-radius:inherit}
+.rating-score{display:grid;justify-items:center;gap:.1rem;min-width:110px}
+.rating-score strong{font:4rem/.95 var(--body);font-weight:500;letter-spacing:-.06em}
+.rating-score>span:last-child{font-size:.9rem;color:#666}
+.review-stars{display:inline-flex;align-items:center;gap:2px;color:#fbbc04}
+.review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.review-card{min-width:0;padding:1.5rem;background:#141414;border:1px solid var(--line);border-radius:4px}
+.review-heading{display:flex;align-items:center;gap:.85rem}
+.review-avatar{width:44px;height:44px;display:grid;place-items:center;flex:none;border-radius:50%;background:#292929;color:var(--acc);font-weight:700;font-size:1.15rem}
+.review-person{min-width:0}
+.review-person h3{font:700 1rem/1.3 var(--body);text-transform:none;overflow-wrap:anywhere}
+.review-person p,.review-meta time{font-size:.82rem;color:var(--mut)}
+.review-meta{display:flex;align-items:center;flex-wrap:wrap;gap:.7rem;margin:.9rem 0 .65rem}
+.review-meta time{margin-left:auto}
+.review-text{color:#d8d8d3;font-size:.98rem;line-height:1.65;overflow-wrap:anywhere}
+.reviews-link{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.5rem;color:var(--acc);font-weight:700}
+.reviews-link:hover{color:#fff}
+@media(max-width:600px){.reviews-summary{gap:1rem;padding:1.25rem}.rating-score{min-width:86px}.rating-score strong{font-size:3.2rem}.review-grid{grid-template-columns:1fr}.review-card{padding:1.25rem}}
+
 /* Hours */
 .hours{display:grid;grid-template-columns:1fr 1.2fr;gap:4rem;align-items:start}
 .status{display:inline-flex;align-items:center;gap:.7rem;font-weight:700;font-size:1.1rem;margin-bottom:.4rem}

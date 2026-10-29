@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Menu, X, Phone } from 'lucide-react';
 import { gym } from '../data/gymData';
 
-const links = [['Home', 'home'], ['About', 'about'], ['Facilities', 'facilities'], ['Gallery', 'gallery'], ['Opening Hours', 'hours'], ['Location', 'location'], ['Contact', 'contact']];
+const links = [['Home', 'home'], ['About', 'about'], ['Facilities', 'facilities'], ['Gallery', 'gallery'], ['Reviews', 'reviews'], ['Opening Hours', 'hours'], ['Location', 'location'], ['Contact', 'contact']];
 
 export default function Navbar() {
   const [solid, setSolid] = useState(false);
